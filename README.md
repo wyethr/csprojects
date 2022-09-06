@@ -1,13 +1,13 @@
 # csprojects
 
-[Live site](https://wyethr.github.io/csprojects/)
+[live site](https://wyethr.github.io/csprojects/)
 
-i was here
+i was here(ish)
 
 # Header level 2
 
-Look at me
+look at me
 - being
 - here
 
-[all here and stuff](http://marlborough.org)
+[and here too](http://marlborough.org)
