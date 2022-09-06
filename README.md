@@ -1,5 +1,7 @@
 # csprojects
 
+[Live site](https://wyethr.github.io/csprojects/)
+
 i was here
 
 # Header level 2
@@ -8,4 +10,4 @@ Look at me
 - being
 - here
 
-[http://marlborough.org](all here and stuff)
+[all here and stuff](http://marlborough.org)
