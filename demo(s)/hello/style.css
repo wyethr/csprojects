@@ -1,0 +1,19 @@
+h2 {
+  color: green;
+
+  /* this is what a comment looks like */
+  /* color: #________ */
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  background-color: #eee;
+}
+
+p.special {
+  background-color: #fff;
+  color: green;
+}
