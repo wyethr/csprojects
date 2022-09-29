@@ -1,9 +1,14 @@
 void setup() {
   fullScreen();
-  background(0);
+  
+  backgroundColor = 0;
+  background(backgroundColor);
+  
+  rotation = (float)0;
+  rotationFactor = PI/1000;
   
   moon = new Moon();
-  rotation = (float)0;
+  arc = new Arc(moon, backgroundColor, rotationFactor);
 }
 
 void draw() {
@@ -12,8 +17,14 @@ void draw() {
   background(0);
   moon.display();
   
-  rotation -= PI/1000;
+  //arc.display();
+  arc.update();
+  
+  rotation -= rotationFactor;
+  arc.changeRotation(rotationFactor);
 }
 
 Moon moon;
-float rotation;
+float rotation, rotationFactor;
+color backgroundColor;
+Arc arc;
