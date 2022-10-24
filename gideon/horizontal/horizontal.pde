@@ -1,8 +1,12 @@
 import processing.sound.*; 
 
 void setup() {
-  fullScreen();
+  size(500, 500);
   background(255);
+  
+  music = new SoundFile(this, "gideonPerhaps.mp3");
+  //music.play();
+  fullTime = 60*music.duration();
   
   radius = height/10;
   strokeWeight(radius);
@@ -10,16 +14,33 @@ void setup() {
   
   x = 0;
   y = 0;
-  xFactor = 1;
+  
+  xFactor = .5;
+  yFactor = .5;
+  
+  topRight = width;
+  bottomRight = height;
+  bottomLeft = 0;
+  topLeft = 0;
 }
 
 void draw() {
   point(x, y);
-  x += xFactor;
-  if(x > width + radius|| x < 0 - radius) {
-    xFactor *= -1;
-    y += radius;
+  if(y <= topLeft + radius && x < topRight) {
+    x += xFactor;
+  }
+  else if(x >= topRight - radius && y < bottomRight) {
+    y += yFactor;
+  }
+  else if(y >= bottomRight - radius && x < bottomLeft) {
+    x -= xFactor;
+  }
+  else if(x <= bottomLeft + radius) {
+    y -= yFactor;
   }
 }
 
-float x, y, radius, xFactor;
+float x, y, radius, xFactor, yFactor;
+SoundFile music;
+float fullTime;
+float topLeft, topRight, bottomLeft, bottomRight;

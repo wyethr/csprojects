@@ -3,10 +3,10 @@ import processing.sound.*;
 void setup() {
   fullScreen();
   
-  startRadius = 1.5*width;
+  startRadius = .90*width;
   radius = startRadius;
   
-  music = new SoundFile(this, "gideonMusic.mp3");
+  music = new SoundFile(this, "gideonPerhaps.mp3");
   music.play();
   fullTime = 60*music.duration();
 }
