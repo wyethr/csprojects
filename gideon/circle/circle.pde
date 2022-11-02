@@ -7,8 +7,8 @@ void setup() {
   radius = startRadius;
   
   music = new SoundFile(this, "gideonPerhaps.mp3");
-  //music.play();
   fullTime = 60*music.duration();
+  //music.play();
   
   startShrink = false;
 }
@@ -26,6 +26,7 @@ void draw() {
 void keyPressed() {
   if(keyCode == ENTER) {
     startShrink = true;
+    //music.play();
   }
   else if(keyCode == BACKSPACE) {
     radius = .90*width;
