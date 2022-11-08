@@ -2,6 +2,7 @@ import processing.sound.*;
 
 void setup() {
   fullScreen();
+  noCursor();
   
   startRadius = .90*width;
   radius = startRadius;
