@@ -2,16 +2,27 @@
 
 import UIKit
 
-var str = "Hello, playground"
+var str:String = "Hello, playground"
 
 print(str)
 
-var a = 1
-var b = 1
+var a:Int = 2
+var b:Int = 1
 
-a = 2
+a = b
+
+str = String(29)
+
+var e:Bool = true
+
+var numberOfApples = 19
 
 print(a + b)
 print(a - b)
 print(a * b)
 print(a / b)
+
+let c = 10
+
+print(e)
+
